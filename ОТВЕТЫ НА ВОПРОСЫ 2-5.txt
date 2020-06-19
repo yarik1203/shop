@@ -2,7 +2,7 @@
    a)  SELECT DEPARTMENT_ID FROM EMPLOYEES WHERE DEPARTMENT_ID LIKE (
        SELECT DEPARTMENT_ID FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING count(*)>1);
 
-   б)  DELETE a.* FROM EMPLOYEES a,
+   ГЎ)  DELETE a.* FROM EMPLOYEES a,
        (SELECT
        b.DEPARTMENT_ID, b.LAST_NAME
        FROM EMPLOYEES b
@@ -16,7 +16,7 @@
 
    a) SELECT * FROM EMPLOYEES
    
-   б) SELECT DEPARTMENT_NAME, SALARY
+   ГЎ) SELECT DEPARTMENT_NAME, SALARY
       FROM EMPLOYEES, DEPARTMENTS
       WHERE EMPLYEES.DEPARTMEN_ID = DEPARTMENTS.DEPARTMENT_ID
       GROUP_BY DEPARTMENT_NAME
@@ -28,5 +28,5 @@
       AND
      (minimum < 5000 & maximum > 15000)
 
-5)    Надо написать DELETE запрос с JOIN-ом и указать таблицы в которых необходимо произвести удаление данных.
+5)    РќР°РґРѕ РЅР°РїРёСЃР°С‚СЊ DELETE Р·Р°РїСЂРѕСЃ СЃ JOIN-РѕРј Рё СѓРєР°Р·Р°С‚СЊ С‚Р°Р±Р»РёС†С‹ РІ РєРѕС‚РѕСЂС‹С… РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕРёР·РІРµСЃС‚Рё СѓРґР°Р»РµРЅРёРµ РґР°РЅРЅС‹С….
      
